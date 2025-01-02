@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 connectDB();
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Job Portal API \nIf this is not your for you to use, you are not welcome.");
+    res.send("<h1>Welcome to Job Portal API.</h1> <h2>If this is not your for you to use, you are not welcome.</h2>");
 });
 
 // Routes
