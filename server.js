@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require('cors');
 const connectDB = require("./server/config/db");
 const {jobsRouter} = require("./server/routers/Job.router");
 
@@ -9,6 +10,9 @@ const PORT =  3000 || process.env.PORT;
 const app = express();
 
 // Middleware
+app.use(cors({
+    origin: 'http://localhost:4000', // Replace with your frontend's origin
+}));
 app.use(express.json());
 
 // Middleware to log the request method and URL
