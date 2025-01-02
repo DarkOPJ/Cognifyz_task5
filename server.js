@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 // Connect to MongoDB
 connectDB();
 
+// Routes
 app.use("/jobs", jobsRouter);
 
 app.listen(PORT, () => {
