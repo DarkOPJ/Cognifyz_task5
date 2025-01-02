@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:4000', // Replace with your frontend's origin
+    origin: 'https://devjobs-rouge.vercel.app', // Replace with your frontend's origin
 }));
 app.use(express.json());
 
