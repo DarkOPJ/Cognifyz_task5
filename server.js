@@ -26,6 +26,10 @@ app.use((req, res, next) => {
 // Connect to MongoDB
 connectDB();
 
+app.get('/', (req, res) => {
+    res.send("Welcome to Job Portal API \nIf this is not your for you to use, you are not welcome.");
+});
+
 // Routes
 app.use("/jobs", jobsRouter);
 
