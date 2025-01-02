@@ -26,12 +26,12 @@ app.use((req, res, next) => {
 // Connect to MongoDB
 connectDB();
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send("<h1>Welcome to Job Portal API.</h1> <h2>If this is not your for you to use, you are not welcome.</h2>");
 });
 
 // Routes
-app.use("/jobs", jobsRouter);
+app.use("/api/jobs", jobsRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
