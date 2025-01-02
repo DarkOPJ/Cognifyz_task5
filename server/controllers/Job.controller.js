@@ -65,8 +65,10 @@ async function postJobController(req, res) {
       salary,
       company: { name, description, contactEmail, contactPhone },
     });
+
     await job.save();
-    res.status(201).json(job);
+
+    res.status(201).json({ message: "Job created successfully!" });
   } catch (err) {
     res
       .status(500)
@@ -130,7 +132,7 @@ async function putJobController(req, res) {
     }
 
     // Respond with the updated job
-    res.status(200).json(updatedJob);
+    res.status(200).json({ message: "Job editted successfully!" });
   } catch (err) {
     res
       .status(500)
@@ -152,7 +154,7 @@ async function deleteJobController(req, res) {
       }
       
       // Respond with the deleted job
-      res.status(200).json(job);
+      res.status(200).json({ message: "Job deleted successfully!" });
     } catch (err) {
       res.status(500).json({ error: "Failed to delete job", details: err.message });
     }
