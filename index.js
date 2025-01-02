@@ -5,7 +5,7 @@ const cors = require('cors');
 const connectDB = require("./server/config/db");
 const {jobsRouter} = require("./server/routers/Job.router");
 
-const PORT =  3000 || process.env.PORT;
+const PORT =  process.env.PORT || 3000;
 
 const app = express();
 
