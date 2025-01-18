@@ -5,9 +5,6 @@ const API_TO_USE = '/jobApi'
 // Used to fetch jobs from the api
 export const fetchJobs = async (endpoint) => {
   try {
-    // For online data fetching when app is not hosted
-    // const res = await fetch(`/jobApi`);
-
     // For data fetching
     const res = await fetch(`${API_TO_USE}${endpoint}`);
     if (!res.ok) {
