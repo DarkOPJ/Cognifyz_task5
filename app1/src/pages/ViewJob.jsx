@@ -15,7 +15,7 @@ const ViewJob = () => {
         <div className="container m-auto py-6 px-6">
           <Link
             to="/jobs"
-            className="text-indigo-500 hover:text-indigo-600 flex items-center"
+            className="text-gray-500 hover:text-gray-600 flex items-center"
           >
             <FaArrowLeft className="mr-2" />
             Back to Job Listings
@@ -23,7 +23,7 @@ const ViewJob = () => {
         </div>
       </section>
 
-      <section className="bg-indigo-50">
+      <section className="bg-gray-100">
         <div className="container m-auto py-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
             <main>
@@ -39,7 +39,7 @@ const ViewJob = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-                <h3 className="text-indigo-800 text-lg font-bold mb-6">
+                <h3 className="text-gray-500 text-lg font-bold mb-6">
                   Job Description
                 </h3>
 
@@ -47,7 +47,7 @@ const ViewJob = () => {
                 {data.description}
                 </p>
 
-                <h3 className="text-indigo-800 text-lg font-bold mb-2">
+                <h3 className="text-gray-500 text-lg font-bold mb-2">
                   Salary
                 </h3>
 
@@ -71,13 +71,13 @@ const ViewJob = () => {
 
                 <h3 className="text-xl">Contact Email:</h3>
 
-                <p className="my-2 bg-indigo-100 p-2 font-bold">
+                <p className="my-2 bg-gray-200 p-2 font-bold">
                 {data.company.contactEmail}
                 </p>
 
                 <h3 className="text-xl">Contact Phone:</h3>
 
-                <p className="my-2 bg-indigo-100 p-2 font-bold">{data.company.contactPhone}</p>
+                <p className="my-2 bg-gray-200 p-2 font-bold">{data.company.contactPhone}</p>
               </div>
 
               {/* <!-- Manage --> */}
@@ -85,7 +85,7 @@ const ViewJob = () => {
                 <h3 className="text-xl font-bold mb-6">Manage Job</h3>
                 <Link
                   to={`/edit-job/${id}`}
-                  className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                  className="bg-gray-600 hover:bg-gray-700 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Edit Job
                 </Link>

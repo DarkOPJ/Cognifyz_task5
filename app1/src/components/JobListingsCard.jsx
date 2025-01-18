@@ -29,12 +29,12 @@ const JobListingsCard = ({
 
         <button
           onClick={() => setShowDescription((prevState) => !prevState)}
-          className="text-indigo-500 hover:text-indigo-600 mb-2"
+          className="text-stone-400 hover:text-gray-600 mb-2"
         >
           {!showDescription ? "More" : "Less"}
         </button>
 
-        <h3 className="text-indigo-500 mb-2">{salary} / Year</h3>
+        <h3 className="text-stone-400 mb-2">{salary} / Year</h3>
 
         <div className="border border-gray-100 mb-5"></div>
 
@@ -45,7 +45,7 @@ const JobListingsCard = ({
           </div>
           <Link
             to={`/jobs/${id}`}
-            className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+            className="h-[36px] bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
           </Link>
